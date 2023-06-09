@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog personal</title>
+    <link rel="stylesheet" href="acerca_de_mi.css">
+</head>
+<body>
+    <div class="fondo"></div>
+
+    <header class="cabecera">
+        <h1>Mi blog personal</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="inicio" href="index.html">Inicio</a></li>
+            <li><a href="#">Acerca de mí</a></li>
+            <li id="Contacto"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <article>
+            <header>
+                <h2>¡Hola!, soy lilibeth solano hernandez.</h2>
+            </header>
+
+
+
+            <section>
+                <p>
+                    Tengo 24 años, soy estudiante de licenciatura en educación infantil
+                    en la universidad iberoamericana, y en este blog hablare un poco
+                    sobre las experiencias exitosas de inclusion.
+                </p>
+            </section>
+
+            <footer>
+                <small>Publicado el <time>9 de junio</time></small>
+            </footer>
+        </article>
+    </div>
+
+    <div id="e-oculto">
+        <p>✉️lilibeth1626@gmail.com</p>
+    </div>
+
+    <script>
+        const Contacto = document.getElementById('Contacto'), elementoOculto = document.getElementById('e-oculto');
+
+        Contacto.addEventListener('click', function () {
+            if (elementoOculto.style.display === 'none') {
+                elementoOculto.style.display = 'block';
+            } else {
+                elementoOculto.style.display = 'none'
+            }
+        });
+    </script>
+
+    <footer class="pie">
+        <p>&copy; 2023 Mi blog personal todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

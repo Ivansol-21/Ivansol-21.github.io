@@ -1,0 +1,147 @@
+h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+    font-size: 105%;
+    margin: 0;
+    background: linear-gradient(rgb(255, 255, 255), rgb(4, 94, 0.5));
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 30px 10px rgb(2, 119, 12);
+}
+
+.fondo {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(imagenes/niños.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 30px 10px rgb(1, 37, 4);
+}
+
+@keyframes parpadeo {
+    0% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    50% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    70% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+
+.cabecera {
+    position: sticky;
+    top: 10px;
+    background-color: rgba(26, 25, 25, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    font-size: 30px;
+    animation: parpadeo 3s infinite;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center
+}
+  
+nav {
+    position: sticky;
+    background-color: rgba(75, 73, 73, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center
+}
+
+#e-oculto {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    top: 23%;
+    right: 20%;
+    border-radius: 20px;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 1px 0 0;
+}
+
+.inicio {
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 0 1px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#content {
+    padding: 20px;
+    max-width: 65%;
+    position: relative;
+    left: 200px;
+    opacity: 0.9;
+}
+
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 1px 1px 10px 1px;
+    text-align: justify;
+    height: 270px;
+}
+  
+article h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.pie {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+

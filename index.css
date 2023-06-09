@@ -1,0 +1,229 @@
+/* .logo {
+    width: 100px;
+    border-radius: 100px;
+    
+} */
+
+h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+    font-size: 110%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(imagenes/discalculia.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes parpadeo {
+    0% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    50% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    70% {
+        box-shadow: 0 0 30px 10px rgb(121, 113, 113);
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+.cabecera {
+    background-color: rgba(26, 25, 25, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    font-size: 30px;
+    animation: parpadeo 3s infinite;
+}
+
+h1 {
+    margin: 0;
+    text-align: center
+}
+  
+nav {
+    background-color: rgba(75, 73, 73, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center
+}
+
+#e-oculto {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    top: 23%;
+    right: 20%;
+    border-radius: 20px;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 1px 0 0;
+}
+
+.inicio {
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 0 1px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.temas {
+    padding: 5px;
+    margin: 1px;
+    background-color: rgb(228, 222, 222);
+    color: black;
+}
+
+.temas ul li{
+    display: block;
+    border-style: solid;
+    border-color: #fff;
+    padding: 7px 0 7px 0;
+    border-width: 0 0 1px 0;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.temas ul li a {
+    color: black;
+}
+
+#temario {
+    width: 220px;
+    height: 200px;
+    position: fixed;
+    padding-top: 20px;
+    top: 141px;
+    opacity: 0.9;
+}
+
+  
+#content {
+    padding: 20px;
+    max-width: 65%;
+    position: relative;
+    left: 200px;
+    opacity: 0.9;
+}
+
+#content article h2 {
+    font-size: 45px;
+}
+
+#content article h4 {
+    display: inline;
+}
+
+.intro {
+    font-weight: bold;
+    padding: 3px 0 4px;
+    font-size: 25px;
+}
+
+#content article p{
+    margin: 15px 0;
+}
+
+.enlace {
+    display: inline-block;
+    font-size: 80px;
+    text-decoration: none;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.enlace:hover {
+    transform: scale(1.5);
+}
+
+#bio {
+    position: absolute;
+    width: 224px;
+    height: 550px;
+    padding: 10px;
+    padding-top: 20px;
+    top: 162px;
+    right: 10px;
+    background-color: #d6b4b4;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+#bio p {
+    margin: 20px 0;
+}
+
+#bio h3 {
+    margin-top: 0;
+}
+
+  
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 1px 1px 10px 1px;
+    text-align: justify;
+    height: 1300px;
+}
+  
+article h2 {
+    margin-bottom: 10px;
+}
+ 
+.imagenes {
+    width: 800px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+iframe {
+    margin-left: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
